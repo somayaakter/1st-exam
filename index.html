@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Box</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ </head>
+<body class="min-h-screen bg-gray-100 flex flex-col items-center justify-start p-6 sm:p-10">
+
+  <!-- 🔍 Search Box -->
+  <div class="w-full max-w-md flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-0 mb-6">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search Here"
+      class="flex-1 px-4 py-2 border border-gray-300 rounded-full sm:rounded-l-full sm:rounded-r-none focus:outline-none"
+    >
+    <button
+      id="searchBtn"
+      class="px-6 py-2 bg-blue-600 text-white rounded-full sm:rounded-r-full sm:rounded-l-none hover:bg-blue-700 transition"
+    >
+      Search
+    </button>
+  </div>
+
+  <!-- 📦 Result Box -->
+  <div id="resultBox" class="w-full max-w-6xl">
+    <p class="text-gray-500 text-center">Search results will appear here...</p>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
